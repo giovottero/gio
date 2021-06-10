@@ -48,8 +48,9 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		if($text == "ciao"){
-				$text = "Benvenuto sulla pagina del bot";
-				$parameters = array('chat_id'=> $chatId, "text" => $text);
+   			$text="Benvenuto sul nostro BOT di telegram dell\'IIS8MARZO";
+   			$parameters = array('chat_id' => $chatId, "text" => $text);
+  		}
 		if($text == "data"){
    			$risp = "la data odierna è:".date("d.m.y");
    			$parameters = array('chat_id' => $chatId, "text" => $risp);
